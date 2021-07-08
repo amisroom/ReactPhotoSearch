@@ -38,6 +38,18 @@ function App() {
           />
           <button type="submit">Search</button>
         </form>
+        <div className="container">
+          {images.map(image => (
+            <div className="card" key={image.id}>
+            <img src={image.urls.regular} className="card-img" alt="" />
+            <div className="card-content">
+              <div className="card-title">
+                {image.alt_description}
+              </div>
+            </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
