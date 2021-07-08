@@ -10,7 +10,6 @@ function App() {
   const [query, setQuery] = useState('');
 
   useEffect(() => {
-    console.log('useEffect Success');
     fetch(
       `https://api.unsplash.com/search/photos?query=${query}&client_id=${process.env.REACT_APP_CLIENT_ID}`
     )
