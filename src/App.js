@@ -38,6 +38,7 @@ function App() {
           />
           <button type="submit">Search</button>
         </form>
+            </div>
         <div className="container">
           {images.map(image => (
             <div className="card" key={image.id}>
@@ -47,9 +48,8 @@ function App() {
                 {image.alt_description}
               </div>
             </div>
-            </div>
-          ))}
         </div>
+          ))}
       </div>
     </div>
   );
